@@ -18,3 +18,8 @@ An AI-powered tool that extracts course deadlines and assignments from a syllabu
 ## ⚙️ Run Locally
 ```bash
 npx wrangler dev --remote
+```
+
+
+## Deployed on Cloudflare
+https://cf-ai-syllabus-parser.nima-motieifard.workers.dev
