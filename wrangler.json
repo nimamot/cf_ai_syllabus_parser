@@ -43,6 +43,27 @@
 	 * https://developers.cloudflare.com/workers/wrangler/configuration/#service-bindings
 	 */
 	// "services": [{ "binding": "MY_SERVICE", "service": "my-service" }]
+	"ai": {
+		"binding": "AI"
+	},
+	"kv_namespaces": [
+		{
+			"binding": "SYLLABUS_KV",
+			"preview_id": "f27edaadbd1b4de1b3669a8b45da4fe1",
+			"id": "a16a80307ee54788a2dc87ce359871f5"
+		}
+	],
+	"env": {
+		"preview": {
+			"kv_namespaces": [
+				{
+					"binding": "SYLLABUS_KV",
+					"preview_id": "f27edaadbd1b4de1b3669a8b45da4fe1",
+					"id": "a16a80307ee54788a2dc87ce359871f5"
+				}
+			]
+		}
+	},
 	"upload_source_maps": true,
 	"assets": {
 		"directory": "./dist/client",

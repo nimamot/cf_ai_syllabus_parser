@@ -2,67 +2,75 @@
 	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 	line-height: 1.5;
 	font-weight: 400;
-
 	color-scheme: light dark;
-	color: rgba(255, 255, 255, 0.87);
-	background-color: #242424;
-
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-}
-
-a {
-	font-weight: 500;
-	color: #646cff;
-	text-decoration: inherit;
-}
-a:hover {
-	color: #535bf2;
+	--cf-muted: rgba(255, 255, 255, 0.75);
+	--cf-panel-bg: rgba(32, 34, 44, 0.75);
+	--cf-panel-border: rgba(255, 255, 255, 0.05);
+	--cf-panel-hover: rgba(255, 255, 255, 0.05);
+	--cf-history-bg: rgba(12, 13, 18, 0.65);
+	--cf-label-color: rgba(255, 255, 255, 0.85);
+	--cf-input-bg: rgba(20, 21, 27, 0.9);
+	--cf-input-border: rgba(255, 255, 255, 0.15);
+	--cf-download-bg: rgba(255, 255, 255, 0.08);
+	--cf-history-border: rgba(255, 255, 255, 0.08);
+	--cf-history-active-border: rgba(246, 130, 31, 0.65);
+	--cf-history-active-shadow: rgba(246, 130, 31, 0.35);
 }
 
 body {
 	margin: 0;
-	display: flex;
-	place-items: center;
 	min-width: 320px;
 	min-height: 100vh;
+	background-color: #0f111a;
+	color: rgba(255, 255, 255, 0.92);
 }
 
-h1 {
-	font-size: 3.2em;
-	line-height: 1.1;
+a {
+	font-weight: 500;
+	color: #ffb347;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 button {
-	border-radius: 8px;
-	border: 1px solid transparent;
-	padding: 0.6em 1.2em;
-	font-size: 1em;
-	font-weight: 500;
-	font-family: inherit;
-	background-color: #1a1a1a;
-	cursor: pointer;
-	transition: border-color 0.25s;
+	font: inherit;
 }
-button:hover {
-	border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-	outline: 4px auto -webkit-focus-ring-color;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
 }
 
 @media (prefers-color-scheme: light) {
+	body {
+		background-color: #f6f6f7;
+		color: #212633;
+	}
+
 	:root {
-		color: #213547;
-		background-color: #ffffff;
+		--cf-muted: rgba(33, 38, 51, 0.65);
+		--cf-panel-bg: #ffffff;
+		--cf-panel-border: rgba(33, 38, 51, 0.08);
+		--cf-panel-hover: rgba(33, 38, 51, 0.05);
+		--cf-history-bg: rgba(240, 241, 245, 0.9);
+		--cf-label-color: rgba(33, 38, 51, 0.85);
+		--cf-input-bg: rgba(248, 248, 251, 0.95);
+		--cf-input-border: rgba(33, 38, 51, 0.12);
+		--cf-download-bg: rgba(244, 244, 248, 0.9);
+		--cf-history-border: rgba(33, 38, 51, 0.1);
+		--cf-history-active-border: rgba(246, 130, 31, 0.65);
+		--cf-history-active-shadow: rgba(246, 130, 31, 0.25);
 	}
-	a:hover {
-		color: #747bff;
-	}
-	button {
-		background-color: #f9f9f9;
+
+	a {
+		color: #f6821f;
 	}
 }
